@@ -7,6 +7,9 @@ startCommand = "java -jar app.war"
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
 
+[build.args]
+BUILD_COMMAND = "./mvnw clean package -DskipTests"
+
 # If you need persistent storage, uncomment and configure this:
 # [volume]
 # directory = "/data"
